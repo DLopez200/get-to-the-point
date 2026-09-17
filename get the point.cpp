@@ -1,19 +1,23 @@
 #include <iostream>
 #include <cmath>
 
-using namesapce std;
+using namespace std;
 
-class point{
+ class point {
     private:
-    double x;
-    double y;
+    int x;
+    int y;
 
     public:
-    double x = x;
-    double y =  y;
 
-    point& operator-(double x & other){
-        sqrt(())
+    point(){
+        int x = 0;
+        int y = 0;
+    }
+
+    point(int x1, int y1){
+         x = x1;
+         y = y1;
     }
 
     int get_x(){
@@ -23,14 +27,13 @@ class point{
         return y;
     }
 
-}
 
+ };
 int main(){
-    point p1 = point(3.2, 9.8);
-    point p2 = point(5.5, -1.2)
+    point p1 = point(3,4);
 
-    p1.get_x();
-    p2.get_x();
+    cout << p1.get_x();
+    cout << p1.get_y();
 
     return 0;
 }
