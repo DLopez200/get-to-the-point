@@ -20,6 +20,10 @@ using namespace std;
          y = y1;
     }
 
+    point operator-(point  other){
+        return point(x - other.x);
+    }
+
     int get_x(){
         return x;
     }
@@ -32,8 +36,8 @@ using namespace std;
 int main(){
     point p1 = point(3,4);
 
-    cout << p1.get_x();
-    cout << p1.get_y();
+    //cout << p1.get_x() <<endl;
+    //cout << p1.get_y() <<endl;
 
     return 0;
 }
